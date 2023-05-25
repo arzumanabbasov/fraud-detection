@@ -5,3 +5,5 @@ pandas~=2.0.1
 seaborn~=0.12.2
 scikit-learn~=1.2.2
 xgboost~=1.7.5
+joblib~=1.2.0
+streamlit~=1.22.0
