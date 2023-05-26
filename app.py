@@ -57,7 +57,12 @@ def main():
     # Make predictions on button click
     if st.button('Predict'):
         predictions = predict(input_data)
-        st.write('Predicted Class:', predictions[0])
+        is_fraud = ''
+        if predictions[0] == 1:
+            is_fraud = 'Fraud'
+        else: 
+            is_fraud = 'Normal'
+        st.write(f'Predicted Class : {is_fraud}')
 
 
 # Run the app
