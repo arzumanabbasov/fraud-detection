@@ -57,7 +57,7 @@ def main():
     # Make predictions on button click
     if st.button('Predict'):
         predictions = predict(input_data)
-        st.write('Predicted Class:', predictions)
+        st.write('Predicted Class:', predictions[0])
 
 
 # Run the app
