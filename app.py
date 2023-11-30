@@ -72,7 +72,7 @@ def main():
 
     # Create input form
     st.header('Enter transaction details:')
-    _type = st.selectbox(label='Select payment type', options=['TRANSFER', 'CASH-IN', 'CASH-OUT', 'DEBIT', 'PAYMENT'])
+    _type = st.selectbox(label='Select payment type', options=['CASH-IN', 'CASH-OUT', 'DEBIT', 'PAYMENT','TRANSFER'])
     step = st.number_input('Step', min_value=1)
     amount = st.number_input('Amount', min_value=0.0)
     oldbalanceOrg = st.number_input('Old Balance Origin')
